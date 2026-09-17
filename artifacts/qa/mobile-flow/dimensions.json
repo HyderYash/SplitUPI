@@ -1,0 +1,218 @@
+[
+  {
+    "width": 320,
+    "contentWidth": 320,
+    "summaryHeight": 167.28125,
+    "invoice": "TABLE-42",
+    "invoiceVisible": true,
+    "paymentButtons": [
+      {
+        "label": "Open UPI App",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 258,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 258,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 124.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 258,
+        "height": 47
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "contentWidth": 360,
+    "summaryHeight": 167.28125,
+    "invoice": "TABLE-42",
+    "invoiceVisible": true,
+    "paymentButtons": [
+      {
+        "label": "Open UPI App",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 298,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 298,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 144.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 298,
+        "height": 47
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "contentWidth": 390,
+    "summaryHeight": 172.578125,
+    "invoice": "TABLE-42",
+    "invoiceVisible": true,
+    "paymentButtons": [
+      {
+        "label": "Open UPI App",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 312,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 312,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 151.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 312,
+        "height": 47
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "contentWidth": 430,
+    "summaryHeight": 172.578125,
+    "invoice": "TABLE-42",
+    "invoiceVisible": true,
+    "paymentButtons": [
+      {
+        "label": "Open UPI App",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 352,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 352,
+        "height": 47
+      },
+      {
+        "label": "Open UPI App",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Show QR",
+        "width": 171.5,
+        "height": 48
+      },
+      {
+        "label": "Payment completed ",
+        "width": 352,
+        "height": 47
+      }
+    ]
+  }
+]
