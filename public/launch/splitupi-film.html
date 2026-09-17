@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A 36-second animated introduction to SplitUPI. One bill, clear shares, multiple UPI requests.">
+  <meta name="robots" content="noindex">
+  <title>SplitUPI — One bill, clear shares</title>
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="film.css">
+</head>
+<body>
+  <main class="player" aria-label="SplitUPI animated product walkthrough">
+    <div class="viewport" id="viewport">
+      <div class="film-stage" id="film-stage" role="img" aria-label="Animated sample walkthrough of splitting a 6,000 rupee restaurant bill into three 2,000 rupee UPI requests. All confirmations are manual, not bank-verified. No money moves.">
+        <div class="stage-grain"></div>
+        <header class="film-header">
+          <div class="wordmark"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>SplitUPI</div>
+          <span class="header-meta">ONE BILL. CLEAR SHARES.</span>
+        </header>
+
+        <section class="scene scene-intro" data-start="0" data-end="4.8">
+          <div class="eyebrow" data-in="0">MADE FOR THE TABLE</div>
+          <h1 class="headline intro-head"><span data-in="0">One bill.</span><span data-in=".2">Multiple UPI</span><span data-in=".4" class="muted-word">payments.</span></h1>
+          <div class="hero-bill ui-card" data-in=".7">
+            <div><span class="tiny-label">THE BOMBAY BISTRO</span><div class="hero-caption">A great meal, together.</div></div>
+            <div class="hero-total" id="intro-total">₹6,000</div>
+            <div class="bill-bottom"><span>One restaurant bill</span><span class="mini-mark">SPLITUPI</span></div>
+          </div>
+          <div class="intro-shares" aria-hidden="true">
+            <div class="intro-share" id="intro-share-1"><span>01</span><b>₹2,000</b></div>
+            <div class="intro-share" id="intro-share-2"><span>02</span><b>₹2,000</b></div>
+            <div class="intro-share" id="intro-share-3"><span>03</span><b>₹2,000</b></div>
+          </div>
+          <p class="intro-caption" data-in="2.5">A clear amount for every payment.</p>
+        </section>
+
+        <section class="scene scene-entry" data-start="4.8" data-end="10">
+          <div class="eyebrow" data-in="0">01 / ADD THE DETAILS</div>
+          <h2 class="headline"><span data-in=".05">Start with</span><span data-in=".2" class="muted-word">the bill.</span></h2>
+          <div class="entry-panel ui-card" data-in=".35">
+            <div class="panel-heading"><div class="small-symbol">↗</div><div><strong>Create a split</strong><span>One merchant. One total.</span></div><span class="sample-tag">SAMPLE</span></div>
+            <div class="field"><label>Merchant name</label><div class="input-shell"><span id="typed-merchant">The Bombay Bistro</span><i class="typing-caret" id="merchant-caret"></i></div></div>
+            <div class="field"><label>Merchant UPI ID</label><div class="input-shell subdued"><span id="typed-vpa">bistro@demo</span></div></div>
+            <div class="field"><label>Bill total</label><div class="input-shell amount-input"><span class="currency-mark">₹</span><span id="typed-amount">6,000</span><span class="inr">INR</span></div></div>
+            <div class="primary-button" id="entry-button">Preview split <span>→</span></div>
+            <p class="micro-copy">Sample merchant details for this walkthrough.</p>
+          </div>
+          <div class="tap-cursor" id="entry-cursor" aria-hidden="true"><div class="tap-ring"></div><svg viewBox="0 0 34 42"><path d="M3 2v31l9-8 6 14 7-3-6-13 12-1Z"/></svg></div>
+        </section>
+
+        <section class="scene scene-split" data-start="10" data-end="15.5">
+          <div class="eyebrow" data-in="0">02 / MAKE IT YOURS</div>
+          <h2 class="headline"><span data-in=".05">Choose your</span><span data-in=".2" class="muted-word">split.</span></h2>
+          <div class="split-panel ui-card" data-in=".35">
+            <div class="split-tabs"><div class="tab-highlight" id="tab-highlight"></div><span id="equal-tab">Equal</span><span>Fixed amount</span><span>Custom</span></div>
+            <div class="split-total"><span class="tiny-label">BILL TOTAL</span><strong>₹6,000<span>.00</span></strong></div>
+            <div class="people-picker"><span>Number of payments</span><div><i>−</i><b id="people-count">3</b><i id="people-plus">+</i></div></div>
+            <div class="split-result" id="split-result">
+              <div class="split-mini"><span>PAYMENT 01</span><b id="split-amount-1">₹2,000</b></div>
+              <div class="split-mini"><span>PAYMENT 02</span><b id="split-amount-2">₹2,000</b></div>
+              <div class="split-mini"><span>PAYMENT 03</span><b id="split-amount-3">₹2,000</b></div>
+            </div>
+            <div class="exact-note"><span class="check-circle">✓</span>Every paise accounted for.<strong>₹6,000.00</strong></div>
+          </div>
+          <div class="tap-cursor" id="split-cursor" aria-hidden="true"><div class="tap-ring"></div><svg viewBox="0 0 34 42"><path d="M3 2v31l9-8 6 14 7-3-6-13 12-1Z"/></svg></div>
+          <p class="scene-caption" data-in="3.5">Equal, custom or fixed. Your choice.</p>
+        </section>
+
+        <section class="scene scene-requests" data-start="15.5" data-end="20.5">
+          <div class="eyebrow" data-in="0">03 / REVIEW EACH REQUEST</div>
+          <h2 class="headline requests-head"><span data-in=".05">Same merchant.</span><span data-in=".2" class="muted-word">Every share.</span></h2>
+          <div class="merchant-pill" data-in=".5"><span class="merchant-icon">B</span><span>The Bombay Bistro <small>bistro@demo</small></span></div>
+          <div class="request-stack">
+            <div class="request-card ui-card" id="request-1"><span class="request-number">01</span><div><span>Payment request</span><strong>₹2,000.00</strong></div><span class="request-arrow">↗</span></div>
+            <div class="request-card ui-card" id="request-2"><span class="request-number">02</span><div><span>Payment request</span><strong>₹2,000.00</strong></div><span class="request-arrow">↗</span></div>
+            <div class="request-card ui-card" id="request-3"><span class="request-number">03</span><div><span>Payment request</span><strong>₹2,000.00</strong></div><span class="request-arrow">↗</span></div>
+          </div>
+          <p class="scene-caption" data-in="2.7">Check the recipient + amount in your UPI app.</p>
+        </section>
+
+        <section class="scene scene-confirm" data-start="20.5" data-end="26.5">
+          <div class="eyebrow" data-in="0">04 / PAY IN YOUR UPI APP</div>
+          <h2 class="headline"><span data-in=".05">Scan. Pay.</span><span data-in=".2" class="muted-word">Then confirm.</span></h2>
+          <div class="qr-panel ui-card" id="qr-panel" data-in=".35">
+            <span class="tiny-label">PAYMENT 01 · THE BOMBAY BISTRO</span>
+            <div class="qr-amount">₹2,000<span>.00</span></div>
+            <div class="qr-frame"><svg id="demo-qr" viewBox="0 0 33 33" aria-label="Non-payable demonstration QR"></svg><div class="scan-line" id="scan-line"></div><i class="scan-corner tl"></i><i class="scan-corner tr"></i><i class="scan-corner bl"></i><i class="scan-corner br"></i></div>
+            <span class="qr-caption">ILLUSTRATIVE DEMO QR</span>
+          </div>
+          <div class="confirm-dialog ui-card" id="confirm-dialog">
+            <div class="dialog-top"><span class="dialog-icon">✓</span><div><strong>Payment completed?</strong><span>First, check with the merchant.</span></div></div>
+            <p>This records your confirmation.<br>SplitUPI does not verify bank settlement.</p>
+            <div class="dialog-actions"><span>Go back</span><div class="primary-button" id="confirm-button">Confirm manually <b>→</b></div></div>
+          </div>
+          <div class="tap-cursor" id="confirm-cursor" aria-hidden="true"><div class="tap-ring"></div><svg viewBox="0 0 34 42"><path d="M3 2v31l9-8 6 14 7-3-6-13 12-1Z"/></svg></div>
+        </section>
+
+        <section class="scene scene-summary" data-start="26.5" data-end="31.5">
+          <div class="eyebrow" data-in="0">05 / KEEP A CLEAR RECORD</div>
+          <h2 class="headline"><span data-in=".05">All shares.</span><span data-in=".2" class="muted-word">One summary.</span></h2>
+          <div class="receipt ui-card" data-in=".35">
+            <div class="receipt-heading"><span class="receipt-symbol">✓</span><div><strong>The Bombay Bistro</strong><span>Sample payment summary</span></div></div>
+            <div class="receipt-total"><span>MANUALLY CONFIRMED</span><strong id="receipt-total">₹6,000<span>.00</span></strong></div>
+            <div class="receipt-progress"><i id="receipt-progress"></i></div>
+            <div class="receipt-status"><span id="receipt-count">3 of 3 marked complete</span><span>Total ₹6,000.00</span></div>
+            <div class="receipt-divider"></div>
+            <div class="receipt-row" id="receipt-row-1"><span class="receipt-check">✓</span><span>Payment 01<small>Confirmed manually</small></span><b>₹2,000.00</b></div>
+            <div class="receipt-row" id="receipt-row-2"><span class="receipt-check">✓</span><span>Payment 02<small>Confirmed manually</small></span><b>₹2,000.00</b></div>
+            <div class="receipt-row" id="receipt-row-3"><span class="receipt-check">✓</span><span>Payment 03<small>Confirmed manually</small></span><b>₹2,000.00</b></div>
+            <div class="receipt-footer">Saved on this device <span>Printable summary ↗</span></div>
+          </div>
+        </section>
+
+        <section class="scene scene-outro" data-start="31.5" data-end="36">
+          <div class="finale-card" id="finale-card">
+            <div class="finale-icon" id="finale-icon"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <h2><span data-in=".35">Split the bill.</span><span data-in=".5">Keep the</span><span data-in=".65" class="mint-word">good part.</span></h2>
+            <p data-in="1.1">Made for the table.<br>Ready for your phone.</p>
+            <div class="finale-link" data-in="1.4"><span>splitupi.webnaut.in</span><b>↗</b></div>
+            <span class="finale-note" data-in="1.7">TRY THE SAMPLE DEMO</span>
+            <div class="finale-orbit" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <footer class="film-footer"><span><i></i>Sample demo · no money moves</span><span id="verification-note">Designed for everyday together.</span></footer>
+        <div class="film-time-track"><div id="film-time-fill"></div></div>
+      </div>
+    </div>
+    <div class="player-controls" id="player-controls">
+      <button id="play-pause" type="button" aria-label="Pause animation">Pause</button>
+      <button id="replay" type="button" aria-label="Replay animation">Replay</button>
+      <label class="sr-only" for="film-progress">Film position</label>
+      <input id="film-progress" type="range" min="0" max="36" step="0.01" value="0" aria-valuetext="0 seconds of 36">
+      <output id="time-label">0:00 / 0:36</output>
+    </div>
+    <p class="player-hint">Space to play / pause · ← → to seek · R to replay</p>
+    <p class="sr-only" id="film-status" aria-live="polite"></p>
+  </main>
+  <script src="film.js"></script>
+</body>
+</html>
