@@ -1,0 +1,74 @@
+[
+  {
+    "width": 320,
+    "content": 320,
+    "screenWidth": 292,
+    "grid": "grid",
+    "headingFont": "38px",
+    "choices": "grid",
+    "cta": "fixed",
+    "styleJsx": 0,
+    "mode": "direct",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "content": 320,
+    "screenWidth": 292,
+    "grid": "grid",
+    "headingFont": "38px",
+    "choices": "grid",
+    "cta": "fixed",
+    "styleJsx": 0,
+    "mode": "client",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "content": 390,
+    "screenWidth": 354,
+    "grid": "grid",
+    "headingFont": "37.05px",
+    "choices": "grid",
+    "cta": "fixed",
+    "styleJsx": 0,
+    "mode": "direct",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "content": 390,
+    "screenWidth": 354,
+    "grid": "grid",
+    "headingFont": "37.05px",
+    "choices": "grid",
+    "cta": "fixed",
+    "styleJsx": 0,
+    "mode": "client",
+    "errors": []
+  },
+  {
+    "width": 1365,
+    "content": 1365,
+    "screenWidth": 1060,
+    "grid": "grid",
+    "headingFont": "54px",
+    "choices": "grid",
+    "cta": "static",
+    "styleJsx": 0,
+    "mode": "direct",
+    "errors": []
+  },
+  {
+    "width": 1365,
+    "content": 1365,
+    "screenWidth": 1060,
+    "grid": "grid",
+    "headingFont": "54px",
+    "choices": "grid",
+    "cta": "static",
+    "styleJsx": 0,
+    "mode": "client",
+    "errors": []
+  }
+]
