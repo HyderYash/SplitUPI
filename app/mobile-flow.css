@@ -1,0 +1,233 @@
+/* Payment flows share the site's palette; each screen keeps its own hierarchy. */
+.create-screen .input {
+  min-height: 52px;
+  font-size: 16px;
+  border-radius: 11px;
+  scroll-margin-bottom: calc(112px + env(safe-area-inset-bottom));
+}
+.create-screen .label { font-size: 13px; }
+.create-screen .setup-panel,
+.create-screen .preview-panel { box-shadow: 0 12px 40px #142a1705; }
+.payment-session-page .breadcrumb,
+.receipt-page .breadcrumb { min-height: 44px; font-size: 12px; gap: 12px; }
+.payment-session-page .breadcrumb > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: -12px;
+}
+.payment-session-page .app-heading { margin-bottom: 24px; }
+.payment-session-page .app-heading h1 { font-size: clamp(34px, 4vw, 48px); }
+.payment-session-page .app-heading p { font-size: 14px; line-height: 1.65; }
+.payment-session-page .app-heading .eyebrow { font-size: 11px; }
+.payment-session-page .badge { font-size: 11px; border-radius: 100px; padding: 6px 10px; }
+.payment-session-page .notice { font-size: 13px; line-height: 1.7; border-radius: 14px; }
+.payment-session-page .notice-demo {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  color: var(--muted);
+}
+.payment-session-page .session-layout { grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.65fr); gap: 28px; }
+.payment-session-page .session-summary { padding: 26px; border-radius: 20px; top: 100px; }
+.summary-merchant { display: flex; gap: 13px; align-items: flex-start; }
+.summary-merchant-details { min-width: 0; }
+.summary-merchant .merchant-emblem { width: 44px; height: 44px; flex-shrink: 0; margin: 0; float: none; }
+.summary-merchant h2 { font-size: 19px; line-height: 1.3; overflow-wrap: anywhere; }
+.summary-merchant .vpa-line { font-size: 12px; line-height: 1.55; margin-top: 4px; }
+.summary-merchant .invoice-line { font-size: 11px; margin-top: 5px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.summary-amounts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; padding-top: 23px; margin-top: 23px; border-top: 1px solid var(--border); }
+.summary-amounts .total-label { font-size: 12px; padding: 0; margin: 0; border: 0; }
+.summary-amounts .session-total { font-size: 38px; margin-top: 3px; font-weight: 600; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.summary-amounts .summary-remaining { margin: 0; padding: 0; border: 0; align-items: center; font-size: 12px; gap: 12px; }
+.summary-amounts .summary-remaining strong { font-size: 19px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.session-summary .progress-track { height: 7px; margin-top: 20px; }
+.session-summary .progress-fill { background: #5e9e74; }
+.session-summary .progress-labels { font-size: 12px; gap: 10px; margin-top: 9px; }
+.progress-remainder { display: none; }
+.session-summary .summary-foot { margin-top: 18px; font-size: 12px; line-height: 1.65; display: grid; gap: 3px; }
+.session-summary .summary-foot > span:first-child { color: var(--text); }
+.session-summary .button { border-radius: 12px; }
+.session-controls { font-size: 13px; gap: 12px; margin-bottom: 14px; }
+.switch-label { font-size: 12px; min-height: 44px; }
+.switch-label input { width: 20px; height: 20px; flex-shrink: 0; margin: 0; accent-color: #3d8358; }
+.session-payments { min-width: 0; }
+.payment-list { gap: 16px; }
+.payment-card { padding: 24px; border-radius: 20px; scroll-margin-top: 100px; }
+.payment-card.is-active {
+  border-color: color-mix(in srgb, #4e9968 64%, var(--border));
+  box-shadow: 0 6px 22px #1c44210a;
+}
+.payment-card.is-locked { opacity: 1; background: color-mix(in srgb, var(--surface) 50%, var(--bg)); }
+.payment-card.is-locked .payment-heading,
+.payment-card.is-locked .payment-amount { color: var(--muted); }
+.payment-card .payment-top { gap: 10px; }
+.payment-card .payment-heading { gap: 9px; }
+.payment-card .payment-number { width: 30px; height: 30px; border-radius: 9px; font-size: 12px; }
+.payment-card.is-active .payment-number { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.payment-card .payment-top h3 { font-size: 11px; letter-spacing: 0.07em; font-weight: 650; }
+.payment-card .payment-amount { font-size: 38px; margin-top: 15px; font-weight: 550; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.payment-card .payment-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 20px; }
+.payment-actions .button { min-height: 48px; font-size: 14px; padding: 12px; border-radius: 11px; gap: 8px; }
+.payment-actions .confirm-button {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 13px 0 0;
+  min-height: 46px;
+  border-radius: 0;
+  border-top: 1px solid var(--border);
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+}
+.payment-card .payment-help,
+.session-payments > .payment-help { font-size: 12px; line-height: 1.65; margin-top: 12px; }
+.payment-card.is-paid .payment-amount { font-size: 30px; }
+.payment-card.is-paid .payment-help { margin-top: 8px; }
+.payment-session-page .session-bottom { align-items: flex-start; gap: 12px; }
+.session-bottom .text-button { font-size: 12px; line-height: 1.5; gap: 8px; }
+.session-bottom .text-button svg { flex-shrink: 0; }
+.session-bottom button.text-button { background: none; border: 0; padding: 0; text-align: right; }
+
+.modal-backdrop { z-index: 100; padding: 24px; overscroll-behavior: contain; background: #071b12aa; backdrop-filter: blur(12px); }
+.modal { max-width: 460px; padding: 26px; border-radius: 24px; max-height: calc(100dvh - 48px); overscroll-behavior: contain; scrollbar-width: thin; }
+.modal-header { margin-bottom: 18px; }
+.modal-header h2 { font-size: 20px; line-height: 1.3; }
+.modal-header .icon-button { width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0; background: var(--subtle); }
+.modal p { font-size: 14px; line-height: 1.7; }
+.modal .notice { border-radius: 12px; }
+.modal-actions .button { min-height: 48px; font-size: 14px; border-radius: 12px; gap: 8px; }
+.qr-content .eyebrow { font-size: 12px; letter-spacing: 0.07em; overflow-wrap: anywhere; }
+.qr-content h3 { font-size: 38px; margin: 6px 0 16px; overflow-wrap: anywhere; }
+.qr-canvas { padding: 8px; max-width: 276px; border-radius: 16px; border: 1px solid #e2e9e1; }
+.qr-content .qr-caption { font-size: 12px; line-height: 1.6; margin-top: 12px; }
+.qr-recipient { display: flex; align-items: center; gap: 10px; justify-content: space-between; background: var(--field); border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px 8px 14px; margin: 16px 0 6px; }
+.qr-recipient .vpa-line { margin: 0; font-size: 13px; text-align: left; min-width: 0; }
+.qr-recipient .button { min-height: 44px; flex-shrink: 0; padding: 8px 10px; font-size: 12px; border: 0; background: transparent; gap: 6px; }
+.qr-content > .button { border-radius: 12px; min-height: 50px; font-size: 14px; }
+.qr-content > .payment-help { font-size: 12px; line-height: 1.7; margin: 14px 0 8px; }
+.qr-data { font-size: 12px; margin-top: 8px; }
+.qr-data summary { min-height: 44px; padding: 12px 0; outline-offset: 3px; }
+.qr-data code { display: block; padding: 12px; background: var(--field); border-radius: 10px; line-height: 1.7; }
+.qr-content > .text-button { font-size: 14px; justify-content: center; min-height: 48px; margin-top: 8px; border: 0; color: var(--text); background: transparent; }
+
+.receipt-page { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+.receipt-header .eyebrow { font-size: 11px; }
+.receipt-header p { font-size: 14px; }
+.receipt-header .badge { font-size: 12px; margin-top: 14px; border-radius: 100px; }
+.receipt-paper { border-radius: 20px; padding: 32px; box-shadow: 0 16px 50px #0e25100a; }
+.receipt-brand > .eyebrow { font-size: 11px; }
+.receipt-merchant { gap: 20px; }
+.receipt-merchant h2 { font-size: 21px; overflow-wrap: anywhere; }
+.receipt-merchant p,
+.receipt-merchant > div:last-child { font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.receipt-row { padding: 18px 0; font-size: 14px; gap: 16px; }
+.receipt-confirmed-label { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+.receipt-grand-total { font-size: 14px; gap: 16px; }
+.receipt-grand-total small { font-size: 12px; }
+.receipt-grand-total strong { font-size: 30px; font-variant-numeric: tabular-nums; }
+.receipt-notice { font-size: 12px; line-height: 1.8; border-radius: 11px; }
+.receipt-id { font-size: 10px; line-height: 1.6; }
+.receipt-actions .button { min-height: 50px; font-size: 14px; border-radius: 12px; }
+.receipt-page > .payment-help { font-size: 12px; }
+.receipt-page .share-card { border-radius: 18px; padding: 25px; }
+.share-card .eyebrow { font-size: 10px; }
+.share-card p { font-size: 12px; line-height: 1.7; }
+.share-card .button { font-size: 13px; border-radius: 11px; }
+
+@media (max-width: 900px) {
+  .payment-session-page .session-layout { grid-template-columns: minmax(230px, 0.85fr) minmax(0, 1.4fr); gap: 20px; }
+  .payment-session-page .session-summary { padding: 20px; }
+  .payment-card { padding: 20px; }
+  .payment-actions .button { font-size: 13px; padding: 12px 8px; }
+}
+@media (max-width: 700px) {
+  body:has(.create-screen) .site-footer { padding-bottom: calc(115px + env(safe-area-inset-bottom)); }
+  .payment-session-page,
+  .receipt-page { padding: 16px 18px calc(50px + env(safe-area-inset-bottom)); }
+  .payment-session-page .breadcrumb,
+  .receipt-page .breadcrumb { margin-bottom: 14px; }
+  .payment-session-page .app-heading { display: block; margin-bottom: 20px; }
+  .payment-session-page .app-heading h1 { font-size: clamp(32px, 9vw, 39px); margin-top: 5px; }
+  .payment-session-page .app-heading p { font-size: 14px; margin-top: 8px; }
+  .payment-session-page .app-heading > .badge { display: none; }
+  .payment-session-page .notice { padding: 13px 14px; font-size: 12px; gap: 9px; margin-bottom: 18px; }
+  .payment-session-page .session-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .payment-session-page .session-summary { position: static; padding: 18px; border-radius: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-items: center; }
+  .summary-merchant { gap: 11px; align-items: center; }
+  .summary-merchant .merchant-emblem { width: 40px; height: 40px; }
+  .summary-merchant h2 { font-size: 16px; }
+  .summary-merchant .vpa-line { margin-top: 2px; }
+  .summary-merchant .invoice-line { display: block; font-size: 11px; line-height: 1.4; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .summary-amounts { display: block; padding: 0; margin: 0; border: 0; text-align: right; max-width: 135px; }
+  .summary-amounts .session-total { font-size: 27px; line-height: 1.2; margin-top: 4px; }
+  .summary-amounts .summary-remaining { display: none; }
+  .session-summary .progress-track { grid-column: 1 / -1; margin-top: 16px; height: 6px; }
+  .session-summary .progress-labels { grid-column: 1 / -1; margin-top: 7px; font-size: 12px; }
+  .session-summary .progress-percentage { display: none; }
+  .session-summary .progress-remainder { display: inline; }
+  .session-summary .summary-foot { grid-column: 1 / -1; margin-top: 9px; font-size: 12px; gap: 1px; }
+  .session-summary .summary-foot > span:first-child { display: none; }
+  .session-summary > .button { grid-column: 1 / -1; }
+  .session-controls { font-size: 12px; margin-bottom: 9px; gap: 8px; }
+  .switch-label { font-size: 12px; gap: 7px; }
+  .payment-card { padding: 20px; border-radius: 18px; }
+  .payment-card .payment-amount { font-size: 36px; margin-top: 14px; }
+  .payment-card .payment-actions { margin-top: 16px; gap: 9px; }
+  .payment-actions .button { font-size: 13px; min-height: 48px; padding: 12px 10px; gap: 7px; }
+  .payment-actions .confirm-button { margin-top: 3px; min-height: 47px; padding: 12px 0 0; }
+  .payment-card .payment-help { margin-top: 10px; }
+  .payment-session-page .session-bottom { flex-wrap: wrap; margin-top: 18px; gap: 4px 20px; }
+  .session-bottom .text-button { font-size: 12px; }
+  .modal-backdrop { padding: 10px; align-items: flex-end; }
+  .modal { padding: 18px 18px calc(18px + env(safe-area-inset-bottom)); border-radius: 24px; max-height: calc(100dvh - 20px); }
+  .modal-header { margin-bottom: 14px; gap: 8px; }
+  .modal-header h2 { font-size: 19px; }
+  .modal p { font-size: 14px; }
+  .modal-actions { gap: 8px; }
+  .modal-actions .button { font-size: 13px; padding: 12px 10px; }
+  .qr-content h3 { font-size: 34px; margin-bottom: 14px; }
+  .qr-canvas { max-width: min(264px, 62vw); padding: 4px; }
+  .qr-recipient { padding-left: 11px; gap: 6px; }
+  .qr-recipient .button { padding-left: 6px; padding-right: 6px; }
+  .qr-content > .text-button { min-height: 44px; }
+  .receipt-header { padding: 14px 0 28px; }
+  .receipt-header h1 { font-size: clamp(29px, 8.5vw, 37px); }
+  .receipt-paper { padding: 24px 20px; border-radius: 18px; }
+  .receipt-brand > .eyebrow { font-size: 10px; }
+  .receipt-merchant { margin-top: 22px; }
+  .receipt-merchant > div:last-child { margin-top: 12px; }
+  .receipt-grand-total strong { font-size: 27px; }
+  .receipt-row { gap: 10px; }
+  .receipt-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .receipt-actions .button { width: 100%; font-size: 14px; }
+  .receipt-page .share-card { padding: 22px; }
+}
+@media (max-width: 360px) {
+  .payment-session-page,
+  .receipt-page { padding-left: 14px; padding-right: 14px; }
+  .payment-session-page .session-summary,
+  .payment-card { padding: 16px; }
+  .summary-merchant { gap: 8px; }
+  .summary-merchant .merchant-emblem { width: 32px; height: 36px; }
+  .summary-merchant h2 { font-size: 15px; }
+  .summary-amounts .session-total { font-size: 24px; }
+  .summary-amounts { max-width: 110px; }
+  .payment-card .payment-top { gap: 6px; }
+  .payment-card .payment-heading { gap: 7px; }
+  .payment-card .badge { font-size: 10px; padding: 6px 8px; }
+  .payment-actions .button { font-size: 12px; gap: 5px; padding-left: 6px; padding-right: 6px; }
+  .payment-actions .confirm-button { padding-left: 0; padding-right: 0; font-size: 13px; }
+  .switch-label { font-size: 11px; }
+  .receipt-brand { gap: 10px; }
+  .receipt-brand > .eyebrow { font-size: 9px; }
+  .receipt-paper { padding: 21px 17px; }
+  .receipt-grand-total { flex-wrap: wrap; }
+}
+@media print {
+  .receipt-page { padding: 15px !important; }
+  .receipt-paper { padding: 25px; border-radius: 12px; box-shadow: none; }
+  .receipt-actions { display: none; }
+}
